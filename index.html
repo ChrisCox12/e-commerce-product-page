@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | E-commerce product page</title>
 
@@ -16,29 +21,70 @@
 </head>
 <body>
 
-  Collections
-  Men
-  Women
-  About
-  Contact
+  <div class="nav flex">
+    <div class="nav__beginner flex">
+      <div class="nav__menu" onclick="toggleSidebar()"><img src="./images/icon-menu.svg" alt="bar menu"></div>
+      <div class="nav__logo"><img src="./images/logo.svg" alt="sneakers logo"></div>
+    </div>
+    
+    <div class="nav__middler">
+      <div class="nav__navbar flex flex-row">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+      
+      <div class="nav__sidebar flex flex-col" id="nav__sidebar">
+        <div class="nav__sidebar__close" onclick="toggleSidebar()"><img src="./images/icon-close.svg" alt="button to close sidebar"></div>
+        <div class="nav__sidebar__links flex flex-col">
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="nav__ender flex">
+      <div class="nav__cart" onclick="toggleCart()"><img src="./images/icon-cart.svg"></div>
+      <div class="nav__user"><img src="./images/image-avatar.png"></div>
+    </div>
+  </div>
 
-  Sneaker Company
+  <div class="cart flex flex-col" id="cart">
+    <div class="cart__header">Cart</div>
+    <div class="cart__divider"></div>
+    <div class="cart__body flex">
+      <div class="cart__body__empty">Your cart is empty.</div>
+    </div>
+  </div>
 
-  Fall Limited Edition Sneakers
+  <div class="product-images"></div>
 
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+  <div class="product">
+    <div class="product__maker">Sneaker Company</div>
+    <div class="product__name">Fall Limited Edition Sneakers</div>
+    <div class="product__desc">
+      These low-profile sneakers are your perfect casual wear companion. Featuring a
+      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    </div>
+    <div class="product__price">
+      <div class="product__price__current">$125.00</div>
+      <div class="product__price__sale">50%</div>
+      <div class="product__price__previous">$250.00</div>
+    </div>
+    <div class="product__quantity">0</div>
+    <div class="product__add-to-cart-btn">Add to cart</div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./scripts.js"></script>
 </body>
 </html>
