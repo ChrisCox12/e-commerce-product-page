@@ -1,4 +1,15 @@
-const nav__sidebar = document.getElementById("nav__sidebar");
+const sidebar = document.querySelector('.sidebar');
+
+function toggleSidebar() {
+    if(sidebar.classList.contains('toggled--Sidebar')) {
+        sidebar.classList.remove('toggled--Sidebar');
+    }
+    else {
+        sidebar.classList.add('toggled--Sidebar');
+    }
+}
+
+/* const nav__sidebar = document.getElementById("nav__sidebar");
 const cart = document.getElementById("cart");
 
 function toggleSidebar() {
@@ -18,3 +29,4 @@ function toggleCart() {
         cart.classList.add("toggled--Cart");
     }
 }
+ */

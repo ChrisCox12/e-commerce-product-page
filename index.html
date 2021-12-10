@@ -21,7 +21,76 @@
 </head>
 <body>
 
-  <div class="nav flex">
+
+  <div class="content-wrapper">
+    <div class="nav">
+      <div class="nav__section-1">
+        <div class="nav__section-1__bar-menu" onclick="toggleSidebar()"><img src="./images/icon-menu.svg" alt="bar menu icon"></div>
+        
+        <div class="nav__section-1__logo"><img src="./images/logo.svg" alt="logo"></div>
+        <div class="nav__section-1__links">
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+
+      <div class="nav__section-2">
+        <div class="nav__section-2__cart-icon"><img src="./images/icon-cart.svg"></div>
+        <div class="nav__section-2__profile-image"><img src="./images/image-avatar.png" alt="profile image"></div>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar__content">
+        <div class="sidebar__close-btn" onclick="toggleSidebar()"><img src="./images/icon-close.svg" alt="close button"></div>
+        <div class="sidebar__links">
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <ul class="product-images">
+      <li><img src="./images/image-product-1.jpg" alt=""></li>
+      <li><img src="./images/image-product-2.jpg" alt=""></li>
+      <li><img src="./images/image-product-3.jpg" alt=""></li>
+      <li><img src="./images/image-product-4.jpg" alt=""></li>
+    </ul>
+
+    <div class="left-arrow"></div>
+
+    <div class="right-arrow"></div>
+
+    <ul class="product-thumbnails">
+      <li><img src="./images/image-product-1-thumbnail.jpg" alt=""></li>
+      <li><img src="./images/image-product-2-thumbnail.jpg" alt=""></li>
+      <li><img src="./images/image-product-3-thumbnail.jpg" alt=""></li>
+      <li><img src="./images/image-product-4-thumbnail.jpg" alt=""></li>
+    </ul>
+
+    <div class="product-info">
+      Sneaker Company
+      Fall Limited Edition Sneakers
+      These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+      $125.00
+      50%
+      $250.00
+    </div>
+
+    <div class="cart-buttons"></div>
+  </div>
+
+
+  <!-- <div class="nav flex">
     <div class="nav__beginner flex">
       <div class="nav__menu" onclick="toggleSidebar()"><img src="./images/icon-menu.svg" alt="bar menu"></div>
       <div class="nav__logo"><img src="./images/logo.svg" alt="sneakers logo"></div>
@@ -78,7 +147,7 @@
     </div>
     <div class="product__quantity">0</div>
     <div class="product__add-to-cart-btn">Add to cart</div>
-  </div>
+  </div> -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
