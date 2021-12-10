@@ -25,9 +25,30 @@
     <div class="nav__beginner flex">
       <div class="nav__menu" onclick="toggleSidebar()"><img src="./images/icon-menu.svg" alt="bar menu"></div>
       <div class="nav__logo"><img src="./images/logo.svg" alt="sneakers logo"></div>
+
+      <div class="nav__navbar flex flex-row">
+        <a href="#">Collections</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div class="nav__sidebar flex flex-col" id="nav__sidebar">
+        <div class="nav__sidebar__content">
+          <div class="nav__sidebar__content__close" onclick="toggleSidebar()"><img src="./images/icon-close.svg" alt="button to close sidebar"></div>
+          <div class="nav__sidebar__content__links flex flex-col">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
     </div>
     
-    <div class="nav__middler">
+    <!-- <div class="nav__middler">
       <div class="nav__navbar flex flex-row">
         <a href="#">Collections</a>
         <a href="#">Men</a>
@@ -37,16 +58,18 @@
       </div>
       
       <div class="nav__sidebar flex flex-col" id="nav__sidebar">
-        <div class="nav__sidebar__close" onclick="toggleSidebar()"><img src="./images/icon-close.svg" alt="button to close sidebar"></div>
-        <div class="nav__sidebar__links flex flex-col">
-          <a href="#">Collections</a>
-          <a href="#">Men</a>
-          <a href="#">Women</a>
-          <a href="#">About</a>
-          <a href="#">Contact</a>
+        <div class="nav__sidebar__content">
+          <div class="nav__sidebar__content__close" onclick="toggleSidebar()"><img src="./images/icon-close.svg" alt="button to close sidebar"></div>
+          <div class="nav__sidebar__content__links flex flex-col">
+            <a href="#">Collections</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+          </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
     <div class="nav__ender flex">
       <div class="nav__cart" onclick="toggleCart()"><img src="./images/icon-cart.svg"></div>
@@ -62,22 +85,23 @@
     </div>
   </div>
 
-  <div class="product-images"></div>
-
   <div class="product">
-    <div class="product__maker">Sneaker Company</div>
-    <div class="product__name">Fall Limited Edition Sneakers</div>
-    <div class="product__desc">
-      These low-profile sneakers are your perfect casual wear companion. Featuring a
-      durable rubber outer sole, they’ll withstand everything the weather can offer.
+    <div class="product__product-images"></div>
+    <div class="product__product-content">
+      <div class="product__product-content__maker">Sneaker Company</div>
+      <div class="product__product-content__name">Fall Limited Edition Sneakers</div>
+      <div class="product__product-content__desc">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a
+        durable rubber outer sole, they’ll withstand everything the weather can offer.
+      </div>
+      <div class="product__price">
+        <div class="product__price__current">$125.00</div>
+        <div class="product__price__sale">50%</div>
+        <div class="product__price__previous">$250.00</div>
+      </div>
+      <div class="product__quantity">0</div>
+      <div class="product__add-to-cart-btn">Add to cart</div>
     </div>
-    <div class="product__price">
-      <div class="product__price__current">$125.00</div>
-      <div class="product__price__sale">50%</div>
-      <div class="product__price__previous">$250.00</div>
-    </div>
-    <div class="product__quantity">0</div>
-    <div class="product__add-to-cart-btn">Add to cart</div>
   </div>
   
   <div class="attribution">
