@@ -25,9 +25,14 @@
   <div class="content-wrapper">
     <div class="nav">
       <div class="nav__section-1">
-        <div class="nav__section-1__bar-menu" onclick="toggleSidebar()"><img src="./images/icon-menu.svg" alt="bar menu icon"></div>
+        <div class="nav__section-1__bar-menu" onclick="toggleSidebar()">
+          <img src="./images/icon-menu.svg" alt="bar menu icon">
+        </div>
         
-        <div class="nav__section-1__logo"><img src="./images/logo.svg" alt="logo"></div>
+        <div class="nav__section-1__logo">
+          <img src="./images/logo.svg" alt="logo">
+        </div>
+        
         <div class="nav__section-1__links">
           <a href="#">Collections</a>
           <a href="#">Men</a>
@@ -38,14 +43,22 @@
       </div>
 
       <div class="nav__section-2">
-        <div class="nav__section-2__cart-icon"><img src="./images/icon-cart.svg"></div>
-        <div class="nav__section-2__profile-image"><img src="./images/image-avatar.png" alt="profile image"></div>
+        <div class="nav__section-2__cart-icon" onclick="toggleCart()">
+          <img src="./images/icon-cart.svg">
+        </div>
+        
+        <div class="nav__section-2__profile-image">
+          <img src="./images/image-avatar.png" alt="profile image">
+        </div>
       </div>
     </div>
 
     <div class="sidebar">
       <div class="sidebar__content">
-        <div class="sidebar__close-btn" onclick="toggleSidebar()"><img src="./images/icon-close.svg" alt="close button"></div>
+        <div class="sidebar__close-btn" onclick="toggleSidebar()">
+          <img src="./images/icon-close.svg" alt="close button">
+        </div>
+        
         <div class="sidebar__links">
           <a href="#">Collections</a>
           <a href="#">Men</a>
@@ -58,16 +71,27 @@
 
     <div class="divider"></div>
 
-    <ul class="product-images">
-      <li><img src="./images/image-product-1.jpg" alt=""></li>
-      <li><img src="./images/image-product-2.jpg" alt=""></li>
-      <li><img src="./images/image-product-3.jpg" alt=""></li>
-      <li><img src="./images/image-product-4.jpg" alt=""></li>
-    </ul>
+    <div class="cart">
+      <div class="cart__header">Cart</div>
+      <div class="cart__divider"></div>
+      <div class="cart__content">
+        <div class="cart__content__empty-cart">
+          Your cart is empty
+        </div>
+        <div class="cart__content__not-empty-cart"></div>
+      </div>
+    </div>
 
-    <div class="left-arrow"></div>
-
-    <div class="right-arrow"></div>
+    <div class="carousel">
+      <ul class="product-images">
+        <li class="product-image current-image"><img src="./images/image-product-1.jpg" alt=""></li>
+        <li class="product-image"><img src="./images/image-product-2.jpg" alt=""></li>
+        <li class="product-image"><img src="./images/image-product-3.jpg" alt=""></li>
+        <li class="product-image"><img src="./images/image-product-4.jpg" alt=""></li>
+      </ul>
+      <div class="carousel__button prev-arrow" onclick="prevImage()"><img src="./images/icon-previous.svg" alt="arrow for previous image"></div>
+      <div class="carousel__button next-arrow" onclick="nextImage()"><img src="./images/icon-next.svg" alt="arrow for next image"></div>
+    </div>
 
     <ul class="product-thumbnails">
       <li><img src="./images/image-product-1-thumbnail.jpg" alt=""></li>
