@@ -229,6 +229,7 @@ ul {
     width: 52px;
     height: 28px;
     font-size: 16px;
+    text-align: center;
 }
 
 .product-info__price__previous {
@@ -408,6 +409,7 @@ ul {
 
     .divider {
         display: block;
+        margin-bottom: 50px;
     }
 
     .product-info__maker {
@@ -435,11 +437,112 @@ ul {
     .sidebar {
         transform: translateX(-108%);
     }
+    
+    .divider {
+        margin-bottom: 70px;
+    }
+
+    .product-content {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 100px;
+        padding: 0 37px; */
+        display: flex;
+        column-gap: 100px;
+        padding: 0 37px;
+        align-items: center;
+    }
+
+    .carousel {
+        border-radius: 15px;
+        overflow: hidden;
+        margin-bottom: 24px;
+        width: 426px;
+        height: 426px;
+    }
+
+    .carousel__button {
+        display: none;
+    }
+
+    .product-thumbnails {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+
+    .product-thumbnails li {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .product-info, .cart-buttons {
+        padding: 0;
+    }
+
+    .cart-buttons {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 16px;
+    }
+
+    .cart-buttons__quantity {
+        grid-column: 1 / span 3;
+    }
+
+    .cart-buttons__atc {
+        grid-column: 4 / span 5;
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .content-wrapper {
         width: 77%;
+    }
+
+    .sidebar {
+        transform: translateX(-116%);
+    }
+
+    .divider {
+        margin-bottom: 90px;
+    }
+
+    .product-content {
+        /* display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 127px;
+        padding: 0 57px; */
+        column-gap: 127px;
+        padding: 0 57px;
+    }
+
+    .carousel {
+        margin-bottom: 34px;
+        width: 446px;
+        height: 446px;
+    }
+
+    .product-thumbnails {
+        column-gap: 30px;
+    }
+
+    .product-info, .cart-buttons {
+        padding: 0;
+    }
+
+    .cart-buttons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 16px;
+    }
+
+    .cart-buttons__quantity {
+        grid-column: 1 / span 2;
+    }
+
+    .cart-buttons__atc {
+        grid-column: 3 / span 5;
     }
 }
 
